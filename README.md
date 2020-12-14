@@ -1,64 +1,33 @@
-# Python Fundamentals
-
-### **Objective:**
-* To complete the method stubs in each of the provided python modules
-	* `calculator.py`
-	* `predicator.py`
-	* `string_manipulator.py`
-
-### **Purpose:**
-* To establish familiarity with
-    * [method signatures and return statements]()
-    * [primitive data-types]()
-    * [class and object-definition]()
-    * [unit-testing]()
-    * [arrays]()
-    * [for loops]()
-	
-### **Instructions:**
-
-1. Fork this Repository
-    * [fork](https://help.github.com/articles/fork-a-repo/) this repository to your personal github account 
-    * [clone](https://help.github.com/articles/cloning-a-repository/) **your** `forked` repository to your local machine.
-    * Complete steps 2 and 3  
-    * `git add` your changes to the list of your `commited` files.
-    * `git commit` your added files to the list of your `staged` files.
-    * `git push` your staged files to your remote repository.
-    * submit a `pull request` which compares Perscholas `master` to your `master`.
-2. Begin by first ensuring the `main` method in your `perscholas_rocks.py` module prints `"Perscholas Rocks!"` upon execution.  
-3. Complete each of the method stubs in each of the `main` classes provided.
-    * `main` classes are located in `src.main.java.com.github.perscholas.java_fundamentals`
-    * There are comments above each method stub to describe the expected behavior.
-4. Upon completion, open and run the `TestSuite` class to ensure that all tests have 100% success.
-    * `TestSuite` is located in `src.main.java.com.github.perscholas.java_fundamentals`
-
-## Predicate Utilities
-* A _predicate_ is a clause which states something about a subject. (_e.g., **is assigning**_ in _"Leon **is assigning** homework"_)
-* Ensure each of the test cases passes successfully in the class [predicator_test.py](./src/test/predicator_test.py) by completing each of the method stubs in the class [predicator.py](./src/main/predicator.py).
-* Method Stubs to be completed
-	* `is_greater_than_5(some_value)`
-	* `is_greater_than_8(some_value)`
-    * `is_less_than_4(some_value)`
-    * `is_less_than_1(some_value)`
-
-## Math Utilities
-* Ensure each of the test cases passes successfully in the class [calculator_test.py](./src/test/calculator_test.py) by completing each of the method stubs in the class [calculator.py](src/main/calculator.py).
-* Method Stubs to be completed	
-	* `add(first_value, second_value)`
-	* `subtract(first_value, second_value)`
-	* `divide(first_value, second_value)`
-	* `multiply(first_value, second_value)`
+### Part 1 - Install And Use Docker
+1. [Install Git Command Line Interface](https://curriculeon.github.io/Curriculeon/lectures/version-control-systems/git/installation/content.html)
+2. [Install Python]()
+4. [Install Docker](https://curriculeon.github.io/Curriculeon/lectures/containerization/docker/installation/content.html)
+5. [Install Docker (Windows 7)](https://curriculeon.github.io/Curriculeon/lectures/containerization/docker/installation-windows7/content.html)
+6. [Containerize a Python Application]()
+7. [SSH Into Docker Container](https://curriculeon.github.io/Curriculeon/lectures/containerization/docker/ssh-into-container/content.html)
 
 
-## String Utilities
-* Ensure each of the test cases passes successfully in the class [string_evaluator_test.py](./src/test/string_evaluator_test.py) by completing each of the method stubs in the class [string_evaluator.py](src/main/string_evaluator.py).
-* Method Stubs to be completed
-    * `get_hello_world()`
-    * `concatenate(first_value, second_value)`
-    * `substring_inclusive(string_to_fetch_from, starting_index, ending_index)`
-    * `substring_exclusive(string_to_fetch_from, starting_index, ending_index)`
-    * `compare(first_value, second_value)`
-    * `get_middle_character(string_to_fetch_from)`
-    * `get_first_word(string_to_fetch_from)`
-    * `get_second_word(string_to_fetch_from)`
-    * `reverse(string_to_reverse)`
+### Part 2 - Install And Configure Jenkins
+1. [Install Jenkins](https://curriculeon.github.io/Curriculeon/lectures/ci-cd/jenkins/installation/content.html)
+2. [Create Jenkins Command Line Registry](https://curriculeon.github.io/Curriculeon/lectures/ci-cd/jenkins/create-commandline-registry/content.html)
+3. [Disable Jenkins Security Use](https://curriculeon.github.io/Curriculeon/lectures/ci-cd/jenkins/disabling-security-use/content.html)
+4. [Install Jenkins Plugin - Convert To Pipeline](https://curriculeon.github.io/Curriculeon/lectures/ci-cd/jenkins/install-plugin-convert-to-pipeline/content.html)
+5. [Install Jenkins Plugin - Docker](https://curriculeon.github.io/Curriculeon/lectures/ci-cd/jenkins/install-plugin-docker-dependencies/content.html)
+6. [Install Jenkins Plugin - ShiningPanda](https://curriculeon.github.io/Curriculeon/lectures/ci-cd/jenkins/install-plugin-shiningpanda/content.html)
+7. [Jenkins Environment Configuration - Docker Integration](https://curriculeon.github.io/Curriculeon/lectures/ci-cd/jenkins/docker-integration/content.html)
+
+### Part 3 - Creating Pipeline
+1. [My First Python Unittest Pipeline]()
+	* Create a Jenkins pipeline which
+		1. clones a [python repositoy]()
+		2. containerizes the repository in a docker instance
+		3. runs the unittest on the application
+			* `mvn package -Dmaven.test.failure.ignore=true`
+		4. ensure output of build is displayed by Jenkins
+
+
+### Part 4 - Passing Test Cases
+1. [Python Developer Notes](./README-pythondev.md)
+
+
+### Part 5 - Triggering Pipeline With Passing Tests
