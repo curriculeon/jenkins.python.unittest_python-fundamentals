@@ -15,13 +15,7 @@
 		2. runs the [`unittest`](https://docs.python.org/3/library/unittest.html) on the application
 			* `python -m unittest discover -s ./src/test/ -p '*_test.py'`
 		3. ensure output of build is displayed by Jenkins
+2. Trigger Pipeline With Failing Tests
 
 
-### Part 4 - Passing Test Cases
-1. [Python Developer Notes](./README-pythondev.md)
-
-
-### Part 5 - Triggering Pipeline With Passing Tests
-
-
-    
+_[Python Developer Notes](./README-pythondev.md)_
