@@ -1,15 +1,10 @@
-pipeline { pipeline {
-   agent { any }   agent  any 
-   stages {   stages {
-     stage('build') {     stage('build') {
-       steps {       steps {
-        sh 'pip3 install -r requirements.txt'        sh 'pip3 install -r requirements.txt'
-      }      }
-    }    }
-    stage('test') {    stage('test') {
-      steps {      steps {
-        sh 'python3 -m unittest discover -s ./src/test/ -p '*_test.py''        sh 'python3 -m unittest discover -s ./src/test/ -p '*_test.py''
-      }         }   
-    }    }
-  }  }
+timestamps {
+    node () {
+        stage ('Python-test - Checkout') {
+         checkout([$class: 'GitSCM', branches: [[name: '*/master']], doGenerateSubmoduleConfigurations: false, extensions: [], submoduleCfg: [], userRemoteConfigs: [[credentialsId: '', url: 'https://github.com/kbelle-max/jenkins.python.unittest_python-fundamentals']]])
+        }
+        stage ('Python-test - Build') {
+            sh "python -m unittest discover -s ./src/test/ -p '*_test.py'"
+        }
+    }
 }
