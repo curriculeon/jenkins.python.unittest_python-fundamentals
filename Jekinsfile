@@ -1,0 +1,15 @@
+pipeline { pipeline {
+   agent { any }   agent  any 
+   stages {   stages {
+     stage('build') {     stage('build') {
+       steps {       steps {
+        sh 'pip3 install -r requirements.txt'        sh 'pip3 install -r requirements.txt'
+      }      }
+    }    }
+    stage('test') {    stage('test') {
+      steps {      steps {
+        sh 'python3 -m unittest discover -s ./src/test/ -p '*_test.py''        sh 'python3 -m unittest discover -s ./src/test/ -p '*_test.py''
+      }         }   
+    }    }
+  }  }
+}
