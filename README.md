@@ -1,6 +1,6 @@
 ### Part 1 - Install
 1. [Install Git Command Line Interface](https://curriculeon.github.io/Curriculeon/lectures/version-control-systems/git/installation/content.html)
-2. [Install Python]()
+2. [Install Python](https://curriculeon.github.io/Curriculeon/lectures/python/installation/content.html)
 
 ### Part 2 - Install And Configure Jenkins
 
