@@ -12,10 +12,9 @@
 1. [My First Python Unittest Pipeline](https://curriculeon.github.io/Curriculeon/lectures/ci-cd/jenkins/my-first-python-pipeline/content.html)
 	* Create a Jenkins pipeline which
 		1. clones a [python repositoy](https://github.com/curriculeon/jenkins.python.unittest_python-fundamentals)
-		2. containerizes the repository in a docker instance
-		3. runs the [`unittest`](https://docs.python.org/3/library/unittest.html) on the application
+		2. runs the [`unittest`](https://docs.python.org/3/library/unittest.html) on the application
 			* `python -m unittest discover -s ./src/test/ -p '*_test.py'`
-		4. ensure output of build is displayed by Jenkins
+		3. ensure output of build is displayed by Jenkins
 
 
 ### Part 4 - Passing Test Cases
