@@ -5,9 +5,11 @@
 ### Part 2 - Install And Configure Jenkins
 
 1. [Install Jenkins](https://curriculeon.github.io/Curriculeon/lectures/ci-cd/jenkins/installation/content.html)
-2. [Install Jenkins Plugin - `Python` plugin](https://curriculeon.github.io/Curriculeon/lectures/ci-cd/jenkins/install-plugin-python/content.html)
-3. [Install Jenkins Plugin - `ShiningPanda` for Python](https://curriculeon.github.io/Curriculeon/lectures/ci-cd/jenkins/install-plugin-shiningpanda/content.html)
-4. [Install Jenkins Plugin - `Convert To Pipeline`](https://curriculeon.github.io/Curriculeon/lectures/ci-cd/jenkins/install-plugin-convert-to-pipeline/content.html)
+2. [Create Jenkins Command Line Registry](https://curriculeon.github.io/Curriculeon/lectures/ci-cd/jenkins/create-commandline-registry/content.html)
+3. [Disable Jenkins Security Use](https://curriculeon.github.io/Curriculeon/lectures/ci-cd/jenkins/disabling-security-use/content.html)
+4. [Install Jenkins Plugin - `Python` plugin](https://curriculeon.github.io/Curriculeon/lectures/ci-cd/jenkins/install-plugin-python/content.html)
+5. [Install Jenkins Plugin - `ShiningPanda` for Python](https://curriculeon.github.io/Curriculeon/lectures/ci-cd/jenkins/install-plugin-shiningpanda/content.html)
+6. [Install Jenkins Plugin - `Convert To Pipeline`](https://curriculeon.github.io/Curriculeon/lectures/ci-cd/jenkins/install-plugin-convert-to-pipeline/content.html)
 
 ### Part 3 - Creating Pipeline
 1. [My First Python Unittest Pipeline](https://curriculeon.github.io/Curriculeon/lectures/ci-cd/jenkins/my-first-python-pipeline/content.html)
