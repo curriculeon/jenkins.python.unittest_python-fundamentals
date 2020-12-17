@@ -73,7 +73,8 @@
     3. open the newly cloned project from your local machine in PyCharm
     4. open a module to be edited
     5. run corresponding tests for the module to be edited
-[<img src="https://curriculeon.github.io/Curriculeon/lectures/cloud/heroku/hosting-flask-webserver/clone-repository.gif">](https://curriculeon.github.io/Curriculeon/lectures/cloud/heroku/hosting-flask-webserver/clone-repository.gif)
+
+[![](./open-in-ide.gif)](./open-in-ide.gif)
     
     
 ### Running Tests From Command Line 
